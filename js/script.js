@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.querySelector(".navbar .mobile-menu-items");
 
   toggleButton.addEventListener("click", () => {
+    mobileMenu.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+      toggleButtonIcon.classList.add("fa-bars");
+      toggleButtonIcon.classList.remove("fa-x");
+    });
     mobileMenu.classList.toggle("active");
     if (mobileMenu.classList.contains("active")) {
       toggleButtonIcon.classList.remove("fa-bars");

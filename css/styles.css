@@ -62,6 +62,15 @@ img {
   color: #fff;
 }
 
+/* Text Classes */
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
 .section {
   margin: 4rem 0;
 }
@@ -103,8 +112,6 @@ img {
   padding: 2rem 1.7rem;
   background-color: #fff;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
-  height: 400px;
-  width: 400px;
 }
 
 /* Navbar */
@@ -272,6 +279,11 @@ img {
   font-weight: 700;
 }
 
+.chapter-card {
+  height: 400px;
+  width: 400px;
+}
+
 /* Summary */
 .summary {
   background-color: var(--light);
@@ -343,6 +355,19 @@ img {
   vertical-align: middle;
   font-weight: 900;
   color: var(--secondary);
+}
+
+/* Takeaways */
+.takeaways-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.takeaways-cards .card {
+  flex-direction: row;
+  text-align: left;
+  gap: 1rem;
 }
 
 /* Media Queries */
@@ -418,6 +443,10 @@ img {
 
   .info-left {
     display: none;
+  }
+
+  .takeaways-cards {
+    grid-template-columns: 1fr;
   }
 }
 
