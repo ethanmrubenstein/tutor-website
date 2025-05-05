@@ -505,9 +505,9 @@ img {
 .social {
   background-color: var(--dark);
   color: #fff;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   margin-bottom: 0;
 }
 
@@ -730,5 +730,9 @@ img {
 
   .newsletter form .btn {
     width: 100%;
+  }
+
+  .chapter-card {
+    width: auto;
   }
 }
